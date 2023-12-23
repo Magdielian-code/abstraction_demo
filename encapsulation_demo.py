@@ -1,3 +1,5 @@
+# A demo showing access modifiers as well as getters and setters
+
 class Student:
     def __init__(self, name, rollNo, age):
         self.name = name    #public insatnce var iable
@@ -19,18 +21,16 @@ class Student:
         else:
             self.__age = age 
 
-#     def __display(self):
-#         print(f"Hi my name is {self.name}, my roll number is {self._rollNo} and i am {self.__age} years old")
-#     def displayPrivateData(self):
-#         self.__display()
+    def __display(self):
+        print(f"Hi my name is {self.name}, my roll number is {self._rollNo} and i am {self.__age} years old")
+    def displayPrivateData(self):
+        self.__display()
 
-# class Branch(Student):
-#     def show(self):
-#         print(f"My roll no is {self._rollNo}")
+class Branch(Student):
+    def show(self):
+        print(f"My roll no is {self._rollNo}")
 
 s1 = Student("Dave", 24, 26)
 print(s1.get_age())
 s1.set_age(12)
 print(s1.get_age())
-#print(s1._Student__age) # Name Mangling process using dir()
-#s1._Student__display()
