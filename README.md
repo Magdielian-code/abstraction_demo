@@ -1,4 +1,8 @@
-A
+Four ways to implement Polymorphism includes;
+    Duck typing
+    Method Overloading
+    Operator Overriding
+    Method OverridingA
 A
 B
 B
